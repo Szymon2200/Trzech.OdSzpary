@@ -63,27 +63,6 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-.main-photo {
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    overflow: hidden;
-    max-height: 70vh;
-}
-
-.main-photo img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    transition: transform 0.5s ease;
-}
-
-.main-photo:hover img {
-    transform: scale(1.02);
-}
-
 main {
     padding: 2rem;
     max-width: 1200px;
@@ -187,6 +166,17 @@ h2::after {
     line-height: 1.8;
 }
 
+.band-photo {
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.band-photo img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 footer {
     background: linear-gradient(135deg, #333, #111);
     color: white;
@@ -231,8 +221,16 @@ footer {
         height: 250px;
     }
 
-    .main-photo {
-        max-height: 50vh;
+    .hero-image {
+        height: 50vh;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
     }
 
     header h1 {
@@ -254,8 +252,16 @@ footer {
         height: 200px;
     }
 
-    .main-photo {
-        max-height: 40vh;
+    .hero-image {
+        height: 40vh;
+    }
+
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
     }
 
     main {
